@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laboratorio #2 Problemas Basicos con JavaScript </title>
+
+    <script>
+        // Problema 2
+        var a = 10;
+        var b = 5;
+    
+        console.log("Suma:", a + b);
+        console.log("Resta:", a - b);
+        console.log("Multiplicación:", a * b);
+        console.log("División:", a / b);
+
+        // Problema 3
+        let c = "Alvaro, ";
+        let d = "Alvarez";
+
+        console.log(c + d);
+
+        // Problema 4
+        const e = 10;
+        const f = "Desasoft";
+
+        console.log("La variable e es de tipo:", typeof e);
+        console.log("La variable f es de tipo:", typeof f);
+
+        // Problema 5
+        const miObjeto = {
+        numero: 20,
+        cadena: "Alvaro",
+        booleano: true,
+        objetoVacio: {}
+    };
+
+        console.log(miObjeto);
+
+        // Problema 6
+        function sumaMultiplos(numero) {
+        let suma = 0;
+        
+        for (let i = 3; i < numero; i++) {
+            if (i % 3 === 0 || i % 5 === 0) {
+                suma += i;
+            }
+        }
+        
+        return suma;
+    }
+
+    const numero = 10;
+    const resultado = sumaMultiplos(numero);
+    console.log("La suma de todos los números menores que ",numero, "que sean múltiplos de 3 o 5 es:" , resultado);
+    </script>    
+</head>
+<body>
+    <p> El lenguaje Java sirve para crear aplicaciones, los archivos de JavaScript se integran a la pagina HTML</p>
+</body>
+</html>
