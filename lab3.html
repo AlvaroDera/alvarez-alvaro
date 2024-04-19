@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Laboratorio #3 </title>
+</head>
+<body>
+
+<!-- Problema #1-->
+<h3> Problema #1 </h3>
+<h1>Verificar palíndromo de doble base</h1>
+<label for="numero">Ingrese un número:</label>
+<input type="text" id="numero">
+<button onclick="verificarPalindromo()">Verificar</button>
+<p id="resultado1"></p>
+
+<!-- Problema #2-->
+<h3> Problema #2 </h3>
+<h1>Contador de letras</h1>
+<label for="cadena">Ingresa una palabra:</label>
+<input type="text" id="cadena">
+<button onclick="mostrarCantidadLetras()">Contar Letras</button>
+<p id="resultado2"></p>
+
+<!-- Problema #3 -->
+<h3> Problema #3 </h3>
+<h1>Comprobar si un Año es Bisiesto</h1>
+<p>Introduce un año:</p>
+<input type="number" id="inputYear">
+<button onclick="comprobarBisiesto()">Comprobar</button>
+<p id="resultado"></p>
+
+<!-- Problema #4 -->
+<h3> Problema #4 </h3>
+<h1>Sumatoria de Números Primos</h1>
+<input type="number" id="numero">
+<button onclick="sumatoriaPrimos()">Calcular Sumatoria</button>
+<p id="result"></p>
+
+<script>
+    //Problema #1
+    function esPalindromoDobleBase(numero) {
+        function esPalindromo(str) {
+            return str === str.split('').reverse().join('');
+        }
+
+        const decimal = numero.toString();
+        if (!esPalindromo(decimal)) {
+            return false;
+        }
+
+        const binario = numero.toString(2);
+        return esPalindromo(binario);
+    }
+
+    function verificarPalindromo() {
+        const numero = document.getElementById("numero").value;
+        if (esPalindromoDobleBase(numero)) {
+            document.getElementById("resultado1").innerText = "Es un palíndromo de doble base.";
+        } else {
+            document.getElementById("resultado1").innerText = "No es un palíndromo de doble base.";
+        }
+    }
+</script>
+
+<script>
+    //Problema #2
+    function contarLetras(cadena) {
+        const contador = {};
+    
+        for (let letra of cadena) {
+            if (contador[letra]) {
+                contador[letra]++;
+            } else {
+                contador[letra] = 1;
+            }
+        }
+    
+        return contador;
+    }
+    
+    function mostrarCantidadLetras() {
+        const cadena = document.getElementById("cadena").value;
+        const contador = contarLetras(cadena);
+    
+        let mensaje = "Cantidad de letras:<br>";
+        for (let letra in contador) {
+            mensaje += `${letra}: ${contador[letra]}<br>`;
+        }
+    
+        document.getElementById("resultado2").innerHTML = mensaje;
+    }
+</script>
+
+<script>
+    // Problema #3
+    function esBisiesto(year) {
+        return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    }
+    
+    function comprobarBisiesto() {
+        var year = parseInt(document.getElementById("inputYear").value);
+        if (isNaN(year)) {
+            document.getElementById("resultado").innerHTML = "Por favor, introduce un año válido.";
+        } else {
+            if (esBisiesto(year)) {
+                document.getElementById("resultado").innerHTML = year + " es un año bisiesto.";
+            } else {
+                document.getElementById("resultado").innerHTML = year + " no es un año bisiesto.";
+            }
+        }
+    }
+</script>
+
+<script>
+    //Problema #4
+    function esPrimo(num) {
+        if (num <= 1) return false;
+        if (num <= 3) return true;
+    
+        if (num % 2 === 0 || num % 3 === 0) return false;
+    
+        let i = 5;
+        while (i * i <= num) {
+            if (num % i === 0 || num % (i + 2) === 0) return false;
+            i += 6;
+        }
+    
+        return true;
+    }
+    
+    function sumatoriaPrimos() {
+        const numero = parseInt(document.getElementById('numero').value);
+        let suma = 0;
+    
+        for (let i = 2; i <= numero; i++) {
+            if (esPrimo(i)) {
+                suma += i;
+            }
+        }
+    
+        document.getElementById('result').innerText = "La sumatoria de los números primos debajo de " + numero + " es: " + suma;
+    }
+</script>
+
+</body>
+</html>
