@@ -6,6 +6,7 @@
   <title> Secuencia Fibonacci </title>
   <link rel="stylesheet" href="estilos.css">
 
+<!-- Operacion para la secuencia fibonacci -->
   <script>
     function fibonacci(n) {
         let fib = [0, 1];
@@ -20,10 +21,10 @@
         const resultado = fibonacci(limite);
         const resultadoContainer = document.getElementById("resultado");
         
-        // Limpiar el contenedor antes de mostrar nuevos resultados
+        // Para limpiar el contenedor antes de mostrar nuevos resultados
         resultadoContainer.innerHTML = '';
         
-        // Crear un div para cada número de la secuencia
+        // Esto es para crear un div para cada número de la secuencia
         resultado.forEach(numero => {
             const cuadro = document.createElement('div');
             cuadro.textContent = numero;
@@ -33,6 +34,7 @@
     </script>
 
 </head>
+<!-- Formulario -->
 <body>
   <div class="form">
     <form onsubmit="mostrarSecuencia(); return false;">
