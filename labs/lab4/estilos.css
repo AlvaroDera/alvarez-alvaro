@@ -46,8 +46,8 @@
     gap: 10px;
     position: absolute;
     top: 40%;
-    left: auto;
-}
+    left: 50%; /* Establecer el 50% del lado izquierdo */
+    transform: translateX(-50%); /* Mover hacia la izquierda el 50% de su propio ancho */}
   
 #resultado div {
     width: 10px;
