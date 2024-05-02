@@ -1,0 +1,61 @@
+  .form {
+    width: 500px;
+    height: 200px;
+    background-color: #e5e5e5;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 5px rgb(82, 82, 82); /* Efecto de sombra con degradado */
+    
+    /* Estilos para centrar horizontalmente */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form form label {
+    margin-bottom: 10px;
+  }
+
+  .form form input {
+    width: 150px;
+  }
+    
+  .form form button {
+    /*padding: 10px;*/
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  .form form button:hover {
+    background-color: hsl(0, 100%, 22%);
+  }
+
+  #resultado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: center;
+}
+  
+#resultado div {
+    width: 50px;
+    height: 20px;
+    background-color: #e5e5e5;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 5px rgb(82, 82, 82);
+    line-height: 50px;
+}
