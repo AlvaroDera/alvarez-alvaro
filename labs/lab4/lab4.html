@@ -28,6 +28,14 @@
         resultado.forEach(numero => {
             const cuadro = document.createElement('div');
             cuadro.textContent = numero;
+            //La siguiente funcion es para eliminar las tarjetas
+            cuadro.addEventListener('click', function() {
+                const confirmar = confirm("¿Desea eliminar esta tarjeta?");
+                if (confirmar) {
+                    cuadro.remove();
+                }
+            });
+            ////////////////////////////////
             resultadoContainer.appendChild(cuadro);
         });
     }
