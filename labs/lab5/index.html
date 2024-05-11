@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Votación</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Contenedor de fondo -->
+<form class="form">
+  <div class="cont">
+    <h2>Sistema de Votación</h2><br>
+    <!-- Crear contenedor para por candidatos -->
+    <div id="candidatos"> 
+      <div id="candidato1" class="candidato">
+        <button onclick="votar(0)">Juan Perez</button><br><br>
+        <!-- Barra de progreso y el contador -->
+        <div class="barraProgreso" id="progress1"></div>
+        <div class="contadorVotos" id="contador1">Votos: 0</div>
+      </div><br><br>
+      <div id="candidato2" class="candidato">
+        <button onclick="votar(1)">Mario Campos</button><br><br>
+        <div class="barraProgreso" id="progress2"></div>
+        <div class="contadorVotos" id="contador2">Votos: 0</div>
+      </div><br><br>
+      <div id="candidato3" class="candidato">
+        <button onclick="votar(2)">Pablo Escobar</button><br><br>
+        <div class="barraProgreso" id="progress3"></div>
+        <div class="contadorVotos" id="contador3">Votos: 0</div>
+      </div><br><br>
+    </div>
+  </div>
+</form>
+<!-- Conectar con Script.js -->
+<script src="script.js"></script>
+</body>
+</html>
