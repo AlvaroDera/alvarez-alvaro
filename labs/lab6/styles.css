@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    height: 100%;
+    background: linear-gradient( to top, #A0EEC0, #7DDF64);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(177, 177, 177);
+    position: relative;
+    top: 50%;
+    transform: translateY(30%);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  .avatar {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px; /* ajusta el ancho a 100px */
+    height: 100px; /* ajusta la altura a 100px */
+}
+
+ #profile-username {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+ }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #7DDF64;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #A0EEC0;
+  }
+  

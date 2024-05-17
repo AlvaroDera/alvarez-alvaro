@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Formulario de inicio de sesion -->
+    <form id="login-form" class="login-form">
+      <h2>Login</h2>
+      <img src="/lab6/img/avatar.png" class="avatar"><br><br>
+      <input type="text" id="username" placeholder="Nombre de usuario" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit"> Ingresar </button>
+    </form>
+    <!-- Perfiles de usuarios -->
+    <div id="profile" class="profile hidden">
+      <h2> Profile </h2>
+      <img src="/lab6/img/avatar.png" class="avatar"><br><br>
+      <span id="profile-username"></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius temporibus porro, quas harum eligendi dicta illum provident, recusandae qui quia doloribus quis a omnis libero. Earum voluptatem libero nam magni.</p>
+      <button id="logout"> Salir </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
