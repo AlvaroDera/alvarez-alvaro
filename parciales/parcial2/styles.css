@@ -1,0 +1,180 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0%;
+  height: 100%;
+  background: linear-gradient(to top, #A0EEC0, #7DDF64);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+/* Estilos del contenedor principal */
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(177, 177, 177);
+  position: relative;
+  transform: translateY(20%);
+}
+
+/* Estilos de elementos ocultos */
+.hidden {
+  display: none;
+}
+
+/* Estilos para los encabezados */
+h2 {
+  text-align: center;
+}
+
+/* Estilos para los campos de entrada y botones */
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: block;
+}
+
+button {
+  background-color: #7DDF64;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a0eec0;
+}
+
+/* Estilos para la barra de menú */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+ul li a:hover {
+  background-color: #6f6f6f;
+}
+
+table, thead, td, th {
+  border: 1px solid;
+  width: 100%;
+}
+
+/* Estilos para el contenedor de perfil */
+#profile {
+  width: 80%; /* Cambia el ancho según sea necesario */
+  margin: auto; /* Esto centrará el contenedor horizontalmente en la página */
+  padding: 10px; /* Añade un espacio interno al contenedor */
+  background-color: #fff; /* Cambia el color de fondo si es necesario */
+  border-radius: 5px; /* Añade bordes redondeados al contenedor */
+  box-shadow: 10px 10px 10px rgb(177, 177, 177); /* Añade una sombra al contenedor */
+}
+
+/* Estilos para la imagen/avatar */
+.avatar {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 100px;
+}
+
+/* Estilos para el nombre de usuario */
+#profile-username {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  float: right;
+}
+
+
+/* Estilos para las listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos para elementos de lista */
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón de editar */
+.edit {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.edit:hover {
+  background-color: #d32f2f;
+}
+/* Estilos para el botón de eliminación */
+.delete {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #d32f2f;
+}
+
+#taskInput {
+  width: 50%;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* margin: block; */
+  /* float: right; */
+}
+
+#taskValueInput {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* margin: block;
+  float: right; */
+}
+
+#addTaskBtn {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* margin: block;*/
+  float: right; 
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <ul>
+    <li style="float:right;"><a href="#" id="logout-link">Salir</a></li>
+  </ul>
+
+  <div class="container">
+    <!-- Formulario de inicio de sesion -->
+    <form id="login-form" class="login-form">
+      <h2>Iniciar Sesion</h2>
+      <img src="/parciales/parcial2/img/avatar.png" class="avatar"><br><br>
+      <input type="text" id="username" placeholder="Nombre de usuario" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit"> Ingresar </button>
+      <button type="button" id="register-btn">Registrarse</button>
+    </form>
+    <!-- Formulario de registro -->
+    <form id="register-form" class="hidden">
+      <h2>Registrar Nuevo Usuario</h2>
+      <input type="text" id="new-username" placeholder="Nombre de usuario" required>
+      <input type="text" id="new-name" placeholder="Nombre" required>
+      <input type="password" id="new-password" placeholder="Nueva Contraseña" required>
+      <button type="button" id="register-new-user">Registrar</button>
+      <button type="button" id="login-after-register">Iniciar Sesión</button>
+    </form>
+  </div>
+    <!-- Perfiles de usuarios -->
+  <div id="profile" class="profile hidden">  
+    <h2> Registro de Ingresos y Gastos </h2>
+    <span id="profile-username"></span>
+      <input type="text" id="taskInput" placeholder="Agregar al Registro" required>
+      <input type="number" id="taskValueInput" placeholder="Agregar un Valor" required>
+      <button id="addTaskBtn">Agregar</button>    
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>Tarea</th>
+            <th>Valor</th>
+            <th>Fecha de creacion</th>
+            <th>Ususario</th>
+          </tr>
+        </thead>
+        <tbody id="taskList">
+            <!-- Aquí se agregarán las filas de la tabla dinámicamente -->
+        </tbody>
+      </table>    
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>
